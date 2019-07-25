@@ -1,0 +1,51 @@
+Autor
+
+- Reinaldo Domingos de Freitas junior
+
+Arquivos fontes;
+
+- Main.java
+- ListaMemoriaDisponivel.java
+- Bloco.java
+
+Dicas de utilização do programa:
+
+- O programa pode ser executado a partir da Classe principal contida no arquivo Main.java
+  compilando o mesmo e executando em uma IDE ou mesmo por comandos no prompt de Comandos
+  do Sistema usado.
+
+Descrição dos componentes do software:
+lista
+    - Main.java
+        - main(): Resposavel pela execução do software
+
+    - Bloco.java
+        - getEndereco(): Retorna endereco de um bloco de memoria
+        - getTamanho(): Retorna tamanho de um bloco de memoria
+        - setTamanho(Integer tamanho): Define tamanho de um bloco de memoria
+        - getFimBloco(): Retorna endereco do final de um bloco de memoria
+        - getProximo(): Retorna proximo bloco de memoria
+        - setProximo(Bloco proximo): Define proximo bloco de memoria
+        - atualizarEndereco(Integer lenght): Atualiza endereço de um bloco de memoria
+
+
+    - ListaMemoriaDisponivel.java
+        - devolver(String endereco, Integer tamanho): Cria bloco e adiciona Bloco a memoria disponivel
+        - adicionarBlocoMemoriaDisponivel(Bloco<T> novo): Adiciona Bloco a memoria disponivel
+        - solicitar(Integer lenght): Remove bloco na memoria disponivel
+        - removerBlocoMemoria(Bloco<T> anterior, Bloco<T> bloco): Remove bloco na memoria disponivel
+        - removerBlocoMemoria(String endereco): Remove bloco na memoria disponivel no endereco fornecido
+        - juntarBlocos(Bloco<T> anterior, Bloco<T> bloco): Junta dois blocos de memoria
+        - juntarBlocoAtras(Bloco<T> anterior, Bloco<T> bloco): Junta dois blocos de memoria
+        - juntarBlocosMeio(Bloco<T> anterior, Bloco bloco, boolean meio): Junta trẽs blocos de memoria
+        - buscaBlocoMemoria(String endereco): Busca bloco de memoria disponivel no endereco fornecido
+        - buscaBlocoMemoria(Integer lenght): Busca bloco de memoria disponivel com o tamanho fornecido
+        - buscaAnterior(String endereco): Busca bloco de memoria disponivel no endereco fornecido
+        - isFronteira(int fimAnterior, int inicioNovo, int fimNovo, int inicioProximo): Verifica se bloco faz fronteira
+         com outros blocos
+        - isFronteira(int fimAnterior, int inicioNovo): Verifica se bloco faz fronteira
+         com outros blocos
+        - imprimirDisponivel(): Imprime na tela a lista de blocos de memorias disponivel
+        - imprimirIndisponivel(): Imprime na tela a lista de blocos de memorias ocupados
+
+Observações (destacar pontos positivos e justificar pontos negativos);
